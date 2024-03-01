@@ -1,0 +1,28 @@
+{
+  "pontos_extremidade": [
+    {
+      "nome": "prever_preco_casa",
+      "descricao": "Este ponto de extremidade permite prever o preço de uma casa com base em suas características.",
+      "metodo": "POST",
+      "endpoint": "/prever-preco-casa",
+      "formato_entrada": {
+        "Size": "float",
+        "Rooms": "int",
+        "Bathrooms": "int",
+        "YearBuilt": "int"
+      },
+      "formato_saida": {
+        "PricePrediction": "float"
+      }
+    },
+    {
+      "nome": "obter_metricas",
+      "descricao": "Este ponto de extremidade permite obter métricas de desempenho do modelo.",
+      "metodo": "GET",
+      "endpoint": "/obter-metricas",
+      "formato_saida": {
+        "MeanSquaredError": "float"
+      }
+    }
+  ]
+}
